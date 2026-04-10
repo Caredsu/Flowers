@@ -26,6 +26,7 @@
       background-color: var(--dark-color);
       overflow: hidden;
       perspective: 1000px;
+      padding-bottom: 2vh;
     }
 
     .night {
@@ -1249,7 +1250,8 @@
 
     @media (max-width: 768px) {
       .flowers {
-        transform: scale(0.7);
+        transform: scale(0.75) translateY(-2vmin);
+        margin-bottom: -5vmin;
       }
 
       .click-btn {
@@ -1271,9 +1273,21 @@
       }
     }
 
+    @media (max-width: 600px) {
+      .flowers {
+        transform: scale(0.6) translateY(-1vmin);
+        margin-bottom: -3vmin;
+      }
+    }
+
     @media (max-width: 480px) {
       .flowers {
-        transform: scale(0.5);
+        transform: scale(0.55) translateY(0vmin);
+        margin-bottom: 0vmin;
+      }
+
+      .flower {
+        bottom: 5vmin;
       }
 
       .click-btn {
@@ -1283,12 +1297,33 @@
 
       .message {
         font-size: 14px;
+        margin-top: 15px;
+      }
+
+      .button-container {
+        top: 25px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .flowers {
+        transform: scale(0.48) translateY(1vmin);
+        margin-bottom: 2vmin;
+      }
+
+      .flower {
+        bottom: 3vmin;
       }
     }
 
     @media (max-width: 360px) {
       .flowers {
-        transform: scale(0.4);
+        transform: scale(0.42) translateY(2vmin);
+        margin-bottom: 4vmin;
+      }
+
+      .flower {
+        bottom: 0vmin;
       }
 
       .click-btn {
@@ -1298,6 +1333,11 @@
 
       .message {
         font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .button-container {
+        top: 15px;
       }
     }
 
